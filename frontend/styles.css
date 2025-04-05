@@ -1,0 +1,137 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:auto;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    border: 10px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    width: 98%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+    display:flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.left-section, .right-section {
+    width: 48%;
+}
+
+#file-input {
+    padding: 15px 25px;
+    font-size: 18px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    margin: 10px 5px;
+    transition: transform 0.2s, background-color 0.3s;
+    display: inline-block;
+    width: 55%;
+    text-align: center;
+}
+
+button{
+    padding: 15px 25px;
+    font-size: 18px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    margin: 10px 5px;
+    transition: transform 0.2s, background-color 0.3s;
+    display: inline-block;
+    width: 45%;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #222;
+    transform: scale(0.95);
+}
+
+#qr-result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+#qr-result a {
+    color: blue;
+    text-decoration: underline;
+}
+
+img {
+    margin-top: 10px;
+    max-width: 200px;
+}
+
+#video {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+
+input, select {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+
+
+#qr-result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#safe-count {
+    color: green;
+}
+
+#malicious-count {
+    color: red;
+    font-weight: bold;
+}
