@@ -1,6 +1,6 @@
 # 🛡️ QR Code Safety Scanner
 
-A smart QR code scanner that checks if the embedded URL is **malicious** or **safe** using AI, APIs, and community feedback.
+A smart QR code scanner that checks if the embedded URL is **malicious** or **safe** using ML model, APIs, and community feedback.
 
 ---
 
@@ -73,8 +73,8 @@ Users click “Start Camera” and “Scan QR Code.”
 The webcam captures the image and extracts the QR code using jsQR.
 Extract Embedded URL
 The scanner decodes the QR and displays the extracted URL.
-Three-Step URL Verification Process:
 
+Three-Step URL Verification Process:
 🔍 Step 1: VirusTotal API Check
 The URL is sent to VirusTotal to check if it has been reported or detected by antivirus vendors as malicious.
 🛡️ Step 2: Google Safe Browsing API Check
@@ -95,6 +95,25 @@ Report Display
 If the URL was scanned earlier, it shows:
 ✅ Safety status (based on majority voting or past report)
 🧮 Number of “safe” and “malicious” votes
+
+🛠️ Installation & Setup
+
+1.Clone the repo
+git clone https://github.com/your-username/qr-code-safety-scanner.git
+cd qr-code-safety-scanner
+
+2.Install dependencies
+Node.js backend:
+npm install
+Python model:
+pip install -r requirements.txt
+
+3.Set up your .env file
+4.Run the app
+Backend:
+node server.js
+Frontend:
+Open index.html or run with live server
 
 
 📄 License
